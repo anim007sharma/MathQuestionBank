@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Maths Problem</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+         <h1>Maths Problem</h1>
+         <p>This is a rest client for the math problem rest web service we created</p>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom:30px">
+        <input type="submit" id="allProblems" class="btn btn-info" value="List All Problems">
+        <input type="submit" id="editProblem" class="btn btn-info" value="Edit Problem">
+        <input type="submit" id="addProblem" class="btn btn-info" value="Add Problem">
+        <input type="submit" id="deleteProblem" class="btn btn-info" value="Delete Problem">
+    </div>
+    <div class="container" id="output"></div>
+    <div class="container" id="cnt-form-add" style="display: none;"> 
+        <h3 style="margin-bottom:30px">Add Problem</h3>
+        <form id="addProblem_form">
+            <div class="form-group">
+            <input type="text" id="title_addProblem" class="form-control" placeholder="Title">
+            </div>
+            <div class="form-group">
+            <textarea id="content_addProblem" class="form-control" placeholder="Content"></textarea>
+            </div>
+            <input type="submit" class="btn btn-info" value="New Problem">
+        </form>
+    </div>
+    <div class="container" id="cnt-form-edit" style="display: none;">
+        <h3 style="margin-bottom:30px">Update Problem</h3>
+        <form id="editProblem_form">
+            <div class="form-group">
+            <input type="text" id="title_editProblem" class="form-control" placeholder="Title">
+            </div>
+            <div class="form-group">
+            <textarea id="content_editProblem" class="form-control" placeholder="Content"></textarea>
+            </div>
+            <input type="submit" class="btn btn-info" value="Update Problem">
+        </form>
+    </div>
+    <script src="js/script.js"></script>
+</body>
